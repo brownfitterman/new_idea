@@ -4,7 +4,11 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 
 from places_info import get_info
-driver=webdriver.Chrome("chromedriver.exe")
+try:
+    driver=webdriver.Chrome("chromedriver.exe")
+except:
+    driver=webdriver.Chrome("chromedriver")
+
 driver.get('https://www.zomato.com/bangalore/drinks-and-nightlife?zomato_place_v2=17104')
 
 
