@@ -55,7 +55,7 @@ neighborhoods=[]
 avgTimeSpents=[]
 zipcodes=[]
 f=open("main.txt", "w") 
-f.write(data)
+f.write(str(data))
 for item in data:
     populartimess.append(item['TotalBusyHour'])
     timewaits.append(item['timewait'])
